@@ -13,7 +13,7 @@ dist
 dist-ssr
 coverage
 *.local
-.vitepress/cache/
+*/.vitepress/cache/
 
 /cypress/videos/
 /cypress/screenshots/
