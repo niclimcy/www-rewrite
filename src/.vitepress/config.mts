@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "LineageOS",
   description: "LineageOS Android Distribution",
+  base: "/www-rewrite/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
