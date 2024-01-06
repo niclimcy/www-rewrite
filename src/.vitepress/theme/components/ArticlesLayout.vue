@@ -14,6 +14,14 @@ const filteredPosts = computed(() => {
 
 <template>
   <div class="container mx-auto p-8">
+    <div class="mb-8">
+      <h1 class="text-4xl text-gray-800 dark:text-white">
+        {{ frontmatter.title }}
+      </h1>
+      <p class="mt-2 text-gray-500 dark:text-brand-soft">
+        {{ frontmatter.description }}
+      </p>
+    </div>
     <div class="grid grid-cols-1 gap-8">
       <div
         v-for="post in filteredPosts"
