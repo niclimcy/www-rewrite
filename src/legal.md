@@ -1,5 +1,6 @@
 ---
 layout: doc
+outline: deep
 ---
 
 # Legal

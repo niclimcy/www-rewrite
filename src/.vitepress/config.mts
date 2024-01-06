@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 
+const currentYear = new Date().getFullYear();
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "LineageOS",
@@ -38,6 +40,17 @@ export default defineConfig({
         link: 'https://wiki.lineageos.org',
         ariaLabel: 'Wiki'
       }
-    ]
+    ],
+
+    footer: {
+      message: `
+      Need to get in Contact? Check out <a target="_blank" href="https://www.reddit.com/r/LineageOS/">r/LineageOS!</a> <br />
+      Need a Press Kit? Get our <a target="_blank" href="https://docs.google.com/presentation/d/1VmxFrVqkjtNMjZbAcrC4egp8C_So7gjJR3KuxdJfJDo/edit?usp=sharing">Public Brand Guide</a> <br />
+      PayPal: <a target="_blank" href="https://paypal.me/LineageOS">paypal.me/LineageOS</a> <br />
+      Patreon: <a target="_blank" href="https://patreon.com/LineageOS">patreon.com/LineageOS</a> <br />
+      Note: LineageOS LLC is not a 501(c)(3) non-profit, as such donations are not tax-exempt.
+      `,
+      copyright: `&copy; 2016 - ${currentYear} The LineageOS Project`
+    }
   }
 })
