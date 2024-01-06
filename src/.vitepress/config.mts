@@ -17,8 +17,8 @@ export default defineConfig({
     siteTitle: false,
 
     nav: [
-      { text: 'Blog', link: '/blog/' },
-      { text: 'Engineering', link: '/engineering/' },
+      { text: 'Blog', link: '/blog' },
+      { text: 'Engineering', link: '/engineering' },
       { text: 'About', link: '/about' },
       { text: 'Community', link: '/community' },
       { text: 'Legal', link: '/legal' }

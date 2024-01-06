@@ -6,6 +6,8 @@ import '@fontsource-variable/roboto-flex'
 import "@fontsource-variable/roboto-mono"
 import './style.css'
 
+import ArticlesLayout from './components/ArticlesLayout.vue'
+
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -14,6 +16,6 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    app.component('articles', ArticlesLayout)
   }
 } satisfies Theme

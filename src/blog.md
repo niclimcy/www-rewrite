@@ -1,0 +1,4 @@
+---
+layout: articles
+category: blog
+---
