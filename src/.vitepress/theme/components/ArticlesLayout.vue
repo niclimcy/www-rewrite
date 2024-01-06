@@ -13,12 +13,40 @@ const filteredPosts = computed(() => {
 </script>
 
 <template>
-  <h1>All Blog Posts</h1>
-  <ul>
-    <li v-for="post of filteredPosts">
-      <a :href="post.url">{{ post.title }}</a>
-      <span v-if="post.author" >by {{ post.author }}</span>
-    </li>
-  </ul>
-  <Content />
+  <div class="container mx-auto p-8">
+    <div class="grid grid-cols-1 gap-8">
+      <div
+        v-for="post in filteredPosts"
+        class="flex flex-col bg-white border border-t-4 border-t-brand-1 shadow-sm rounded-xl dark:bg-brand-3 dark:border-gray-700 dark:border-t-brand-soft dark:shadow-slate-700/[.7]"
+      >
+        <div class="p-4 md:p-5">
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+            <a :href="post.url">
+              {{ post.title }}
+            </a>
+          </h3>
+          <p class="mt-2 text-gray-500 dark:text-brand-soft">
+            {{ post.excerpt }}
+          </p>
+          <p class="mt-2 text-gray-800 dark:text-white flex align-middle">
+            <span class="material-symbols-outlined mr-1 text-[1.4rem]">
+              calendar_today
+            </span>
+            {{ post.date.string }}&nbsp;
+            <span class="material-symbols-outlined mr-1 text-[1.4rem]">
+              person
+            </span>
+            {{ post.author }}
+          </p>
+          <a
+            class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-brand-2 hover:text-brand-3 disabled:opacity-50 disabled:pointer-events-none dark:text-brand-soft dark:hover:text-brand-1 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            :href="post.url"
+          >
+            Read more
+            <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>

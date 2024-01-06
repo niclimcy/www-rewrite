@@ -7,7 +7,7 @@ excerpt: Understanding the basics of SELinux
 author: Aayush Gupta (theimpulson) & Nolen Johnson (npjohnson)
 ---
 
- ![hero](/images/engineering/hero_selinux.jpg)
+![hero](/images/engineering/hero_selinux.jpg)
 
 ## Glossary
 * AOSP: Short for Android Open Source Project.

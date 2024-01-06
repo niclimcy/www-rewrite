@@ -1,12 +1,13 @@
 // https://vitepress.dev/guide/custom-theme
+import ArticlesLayout from './components/ArticlesLayout.vue'
+
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import '@fontsource-variable/roboto-flex'
 import "@fontsource-variable/roboto-mono"
+import 'material-symbols'
 import './style.css'
-
-import ArticlesLayout from './components/ArticlesLayout.vue'
 
 export default {
   extends: DefaultTheme,
