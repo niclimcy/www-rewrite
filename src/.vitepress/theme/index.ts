@@ -2,8 +2,8 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme-without-fonts'
-import '@fontsource/roboto'
-import "@fontsource/roboto-mono"
+import '@fontsource-variable/roboto-flex'
+import "@fontsource-variable/roboto-mono"
 import './style.css'
 
 export default {

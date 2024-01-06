@@ -11,8 +11,8 @@
     "vue": "^3.4.5"
   },
   "dependencies": {
-    "@fontsource/roboto": "^5.0.8",
-    "@fontsource/roboto-mono": "^5.0.16",
+    "@fontsource-variable/roboto-flex": "^5.0.8",
+    "@fontsource-variable/roboto-mono": "^5.0.17",
     "vitepress": "^1.0.0-rc.35"
   }
 }

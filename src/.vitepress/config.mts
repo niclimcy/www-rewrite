@@ -50,7 +50,7 @@ export default defineConfig({
       Patreon: <a target="_blank" href="https://patreon.com/LineageOS">patreon.com/LineageOS</a> <br />
       Note: LineageOS LLC is not a 501(c)(3) non-profit, as such donations are not tax-exempt.
       `,
-      copyright: `&copy; 2016 - ${currentYear} The LineageOS Project`
+      copyright: `<b>&copy; 2016 - ${currentYear} The LineageOS Project</b>`
     }
   }
 })
